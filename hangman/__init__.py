@@ -3,7 +3,6 @@ __author__ = 'Alexis'
 import getpass
 import sys
 from gameboard import GameBoard
-from thegame import TheGame
 
 if __name__ == '__main__':
     while True:
