@@ -20,7 +20,7 @@ if __name__ == '__main__':
             gameboard.getGuess(guess)
             gameboard.guessWrong(guess)
             gameboard.printBoard()
-            if gameboard.guess_right == len(words):
+            if gameboard.guess_right == len(set(words)) - (1 if ' ' in words else 0):
                 print "You win!"
                 play_again = raw_input("Would you like to play again? (Y/N)")
                 if play_again == "Y":
